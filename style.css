@@ -1,0 +1,36 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body
+{
+    font-family: 'Comic Neue', cursive;
+}
+.navbar-toggler
+{
+   outline: none;
+}
+header
+{
+   background-image: linear-gradient(rgba(0,0,0,0.63),rgba(0,0,0,0.5)),url("images/pic1.jpg");
+    background-size: cover;
+   background-position: center center;
+   background-repeat: no-repeat;
+   min-height: 100vh;
+   border-radius: 0px;
+  
+}
+.banner
+{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:80%;
+}
+.heading
+{
+    font-family: 'Cedarville Cursive', cursive;
+}
