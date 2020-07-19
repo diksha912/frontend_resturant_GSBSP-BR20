@@ -12,14 +12,17 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+   <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
   <title>Resturant</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: black;">
+    <img src="images/logo1.jpg" class="img-fluid" style="width:8%;">
     <a class="navbar-brand font-weight-bold text-warning" href="#">
-      <H2 class="heading">Restora</H2>
+      <h1 class="heading text-warning">Restora</h1>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
@@ -27,16 +30,16 @@
     <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item active m-2">
-          <a class="nav-link text-success" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link text-success" href="#home">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item m-2">
-          <a class="nav-link text-success" href="#">About</a>
+          <a class="nav-link text-success" href="#abt">About</a>
         </li>
         <li class="nav-item m-2">
-          <a class="nav-link text-success" href="#">Food Gallery</a>
+          <a class="nav-link text-success" href="#fd">Food Gallery</a>
         </li>
         <li class="nav-item m-2">
-          <a class="nav-link text-success" href="#">ContactUs</a>
+          <a class="nav-link text-success" href="#contact">ContactUs</a>
         </li>
       </ul>
     </div>
@@ -53,7 +56,7 @@
           <div class="modal-dialog text-danger">
             <div class="model-content">
               <div class="modal-header">
-                <h3 class="modal-title">Menu</h3>
+                <h3 class="modal-title heading">Restora Menu Card</h3>
 
                 <button class="btn btn-outline-danger mr-4">x</button>
               </div>
@@ -66,7 +69,7 @@
         </div>
     </div>
   </header>
-  <section class="about">
+  <section class="about" id="abt">
     <div class="container px-lg-5">
       <h1 class="text-center abt-heading">About</h1>
       <div class="row about-row bg-light">
@@ -83,7 +86,7 @@
       </div>
     </div>
   </section>
-  <div class="container-fluid about">
+  <div class="container-fluid about" id="fd">
     <h1 class="text-center abt-heading">Food Gallery</h1>
     <div class="row about-row">
       <div class="col-sm-12">
@@ -105,6 +108,7 @@
                     </div>
 
                   </div>
+                  
                   <div class="col-sm-12 col-lg-4">
                     <div class="card bg-danger mb-4" style="width: 300px; margin: auto;">
                       <img src="images/image_2.jpg" class="card-img-top">
@@ -189,6 +193,7 @@
             </div>
 
           </div>
+          
           <a href="#inam" class="carousel-control-prev text-danger" data-slide="prev">
             <span class="carousel-control-prev-icon text-danger"></span>
           </a>
@@ -203,57 +208,67 @@
     </div>
 
   </div>
-  <section class="bg-dark">
+  <section class="bg-dark" id="contact">
       <div class="container about">
-    <h2 class="text-center">Contact Us</h2>
+    <h2 class="text-center text-white">Contact Us</h2>
     <div class="row about-row">
-      <div class="col-md-8">
+      <div class="col-md-6">
         <form>
           <div class="form-row">
             <div class="form-group col-md-6">
-              <label for="inputEmail4">Name</label>
+              <label for="inputEmail4" class="text-white">Name</label>
               <input type="text" class="form-control" id="inputEmail4">
             </div>
             <div class="form-group col-md-6">
-              <label for="inputPassword4">Email</label>
+              <label for="inputPassword4" class="text-white">Email</label>
               <input type="email" class="form-control" id="inputPassword4">
             </div>
           </div>
           <div class="form-group">
-            <label for="inputPhone">phoneNumber</label>
+            <label for="inputPhone" class="text-white">phoneNumber</label>
             <input type="text" class="form-control">
           </div>
           <div class="form-group">
-            <label for="inputAddress2">Address</label>
+            <label for="inputAddress2" class="text-white">Address</label>
             <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
           </div>
           <div class="form-row">
             <div class="form-group col-md-6">
-              <label for="inputCity">City</label>
+              <label for="inputCity" class="text-white">City</label>
               <input type="text" class="form-control" id="inputCity">
             </div>
             <div class="form-group col-md-4">
-              <label for="inputState">State</label>
+              <label for="inputState" class="text-white">State</label>
               <select id="inputState" class="form-control">
                 <option selected>Choose...</option>
                 <option>...</option>
               </select>
             </div>
             <div class="form-group col-md-2">
-              <label for="inputZip">Zip</label>
+              <label for="inputZip" class="text-white">Zip</label>
               <input type="text" class="form-control" id="inputZip">
             </div>
           </div>
           <button type="submit" class="btn btn-primary">Contact Us</button>
         </form>        
       </div>
+      <div class="col-md-6">
+        <div class="container text-white mt-10">
+        <h1 class="text-center">Address</h1>
+        <p class="text-center mt-10">RESTORA RESTURANT 65, Ring Road, <BR>Guru Tegh Bahadur Nagar,<BR> North West Delhi, 110009
+          India,<br>near gtb nagar metro station<br>contact no-9867324578 <br>
+          email address:restora.res@gmail.com
+          <br>
+          <i class="fa fa-instagram " aria-hidden="true"></i>
+          <i class="fa fa-whatsapp" aria-hidden="true"></i>
+          <i class="fa fa-facebook mx-auto" aria-hidden="true"></i>
+       
+        </p>
+        </div>
+      </div>
     </div>
   </section>
-
-
-
-
-
+  
 
 
 
